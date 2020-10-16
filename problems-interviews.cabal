@@ -1,0 +1,63 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: de1d3f16123a0a3a2042a72c26fa5e544a890d92f440a2f858b475ed5c408a20
+
+name:           problems-interviews
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/Github username here/problems-interviews#readme>
+homepage:       https://github.com/Github username here/problems-interviews#readme
+bug-reports:    https://github.com/Github username here/problems-interviews/issues
+author:         Author name here
+maintainer:     Author email here
+copyright:      2019 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/Github username here/problems-interviews
+
+library
+  exposed-modules:
+      Lib
+      List
+  other-modules:
+      Paths_problems_interviews
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable problems-interviews-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_problems_interviews
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , problems-interviews
+  default-language: Haskell2010
+
+test-suite problems-interviews-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_problems_interviews
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , problems-interviews
+  default-language: Haskell2010
