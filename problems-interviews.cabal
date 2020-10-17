@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: de1d3f16123a0a3a2042a72c26fa5e544a890d92f440a2f858b475ed5c408a20
+-- hash: 77ddeab7ce00c227f9edb13a5e3e307ff9a10d77a860409dfcabf8d08525312f
 
 name:           problems-interviews
 version:        0.1.0.0
@@ -27,7 +27,6 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
       List
   other-modules:
       Paths_problems_interviews
@@ -35,6 +34,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , random >=1.1
   default-language: Haskell2010
 
 executable problems-interviews-exe
@@ -47,6 +47,7 @@ executable problems-interviews-exe
   build-depends:
       base >=4.7 && <5
     , problems-interviews
+    , random >=1.1
   default-language: Haskell2010
 
 test-suite problems-interviews-test
@@ -60,4 +61,5 @@ test-suite problems-interviews-test
   build-depends:
       base >=4.7 && <5
     , problems-interviews
+    , random >=1.1
   default-language: Haskell2010
